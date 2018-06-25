@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app>
+
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>com.xznn.servlet.UserLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+
+   <!-- <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>com.xznn.servlet.ProductListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductListServlet</servlet-name>
+        <url-pattern>/listProduct</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>OrderItemAddServlet</servlet-name>
+        <servlet-class>com.xznn.servlet.OrderItemAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderItemAddServlet</servlet-name>
+        <url-pattern>/addOrderItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderDeleteServlet</servlet-name>
+        <servlet-class>com.xznn.servlet.OrderDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderDeleteServlet</servlet-name>
+        <url-pattern>/deleteOrderItem</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>OrderItemListServlet</servlet-name>
+        <servlet-class>com.xznn.servlet.OrderItemListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderItemListServlet</servlet-name>
+        <url-pattern>/listOrderItem</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
