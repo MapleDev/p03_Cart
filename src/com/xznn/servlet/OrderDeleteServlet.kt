@@ -23,7 +23,8 @@ class OrderDeleteServlet : HttpServlet() {
         println("orderItems = ${orderItems.size}")
 
         for (orderItem in orderItems) {
-            if (orderItem.id == pid) {
+//            if (orderItem.id == pid) {
+            if (orderItem.product.id == pid) {
                 orderItems.remove(orderItem)
                 break
             }
