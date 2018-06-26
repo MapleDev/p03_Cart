@@ -13,7 +13,6 @@ class OrderDeleteServlet : HttpServlet() {
     override fun service(req: HttpServletRequest, resp: HttpServletResponse) {
 
         val pid = req.getParameter("pid").toInt()
-
         @Suppress("UNCHECKED_CAST")
         var orderItems: MutableList<OrderItemBean>? = req.session.getAttribute("orderItems") as MutableList<OrderItemBean>?
         if (orderItems == null) {
