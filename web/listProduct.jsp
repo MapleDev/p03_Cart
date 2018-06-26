@@ -22,10 +22,8 @@
                     });
                 }
             );
-
         });
         $("#addCartSuccessMessage").hide();
-
     });
 </script>
 
@@ -59,6 +57,7 @@
             <td>${product.id}</td>
             <td>${product.name}</td>
             <td>${product.price}</td>
+
             <%--<td>
                 <form action="addOrderItem" method="post">
                     数量<input type="number" min="1" name="num" value="1"/>
@@ -77,7 +76,7 @@
     </c:forEach>
 
     <tr>
-        <td colspan="4"><a href="/listOrderItem">查看购物车</a></td>
+        <td colspan="4"><a href="listOrderItem">查看购物车</a></td>
     </tr>
 
 </table>

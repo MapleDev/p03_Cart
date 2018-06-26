@@ -11,7 +11,7 @@ import java.util.*
 
 class ProductDAO {
 
-    fun getUserById(id: Int): ProductBean? {
+    fun getProductById(id: Int): ProductBean? {
         var productBean:ProductBean? = null
 
         var ps: PreparedStatement? = null

@@ -27,7 +27,7 @@ class OrderItemAddServlet : HttpServlet() {
         val pid = req.getParameter("pid").toInt()
         val num = req.getParameter("num").toInt()
 
-        val productBean = ProductDAO().getUserById(pid)
+        val productBean = ProductDAO().getProductById(pid)
         if (productBean == null) {
             println("productBean == null")
             return
@@ -44,7 +44,8 @@ class OrderItemAddServlet : HttpServlet() {
 
         var isExist = false
         for (orderItem in orderItems) {
-            if (orderItem.id == pid) {
+//            if (orderItem.id == pid) {
+            if (orderItem.product.id == pid) {
                 orderItem.num += num
                 isExist = true
                 break
