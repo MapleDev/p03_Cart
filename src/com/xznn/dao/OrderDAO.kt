@@ -14,7 +14,7 @@ class OrderDAO {
         var rs: ResultSet? = null
         try {
             Class.forName("com.mysql.jdbc.Driver")
-            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "gakii")
+            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "admin")
             val sql = "insert into order_ value (null, ?)"
             ps = connection.prepareStatement(sql)
             ps.setInt(1, orderBean.user.id)

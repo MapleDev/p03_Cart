@@ -16,7 +16,7 @@ class UserDAO {
         var rs: ResultSet? = null
         try {
             Class.forName("com.mysql.jdbc.Driver")
-            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "gakii")
+            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "admin")
 //            val sql = "select * from user where name = ? and password = ?"
             val sql = "select * from user where name = ?"
             ps = connection.prepareStatement(sql)

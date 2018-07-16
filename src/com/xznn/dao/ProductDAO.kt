@@ -18,7 +18,7 @@ class ProductDAO {
         var rs: ResultSet? = null
         try {
             Class.forName("com.mysql.jdbc.Driver")
-            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "gakii")
+            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "admin")
             val sql = "select * from product where id = ?"
             ps = connection.prepareStatement(sql)
             ps.setInt(1, id)
@@ -50,7 +50,7 @@ class ProductDAO {
         var rs: ResultSet? = null
         try {
             Class.forName("com.mysql.jdbc.Driver")
-            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "gakii")
+            val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cart?characterEncoding=UTF-8", "root", "admin")
             val sql = "select * from product order by id desc"
             ps = connection.prepareStatement(sql)
             rs = ps.executeQuery()
